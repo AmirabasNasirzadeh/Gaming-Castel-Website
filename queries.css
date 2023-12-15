@@ -42,7 +42,7 @@
 
     .hero-text {
         text-align: center;
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -91,7 +91,7 @@
     }
 
     .header-primary {
-        font-size: 3.2rem;
+        font-size: 3.6rem;
     }
 
     .header-secondary {
@@ -126,7 +126,7 @@
     }
 
     .header-primary {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
 
     .header-secondary {
