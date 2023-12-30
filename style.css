@@ -119,61 +119,155 @@ header {
   background-color: #dfd8f3;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.8rem 6.4rem;
-}
+.nav-section {}
 
 .nav-logo {
   height: 6.2rem;
+  margin-right: auto;
+  margin: 2rem 6.4rem;
 }
 
-.nav-bar {
-  display: flex;
-  list-style: none;
-  font-size: 1.8rem;
-}
+.navigation {}
 
-.nav-icon:link,
-.nav-icon:visited {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  margin: 0 2rem;
+.nav-icon,
+.nav-icon::before,
+.nav-icon::after {
+  height: 3px;
+  width: 3rem;
+  background-color: #555;
+  display: inline-block;
   transition: all 0.2s;
 }
 
-.nav-icon:hover,
-.nav-icon:active {
-  color: #5f3dc4;
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
 }
 
-.short-nav-link:link,
-.short-nav-link:visited {
-  text-decoration: none;
-  color: #333;
-  transition: all 0.2s;
+.nav-icon {
+  position: relative;
+  margin-top: 3rem;
+  margin-left: 1.5rem;
 }
 
-.short-nav-link:hover,
-.short-nav-link:active {
-  color: #5f3dc4;
+.nav-icon::before {
+  top: -0.8rem;
 }
 
-.short-nav-icon {
-  height: 4.8rem;
-  width: 4.8rem;
+.nav-icon::after {
+  top: 0.8rem;
 }
 
-.long-nav {
-  display: block;
+.nav-button:hover .nav-icon::before {
+  top: -1rem;
 }
 
-.short-nav {
+.nav-button:hover .nav-icon::after {
+  top: 1rem;
+}
+
+.nav-checkbox:checked+.nav-button .nav-icon {
+  background-color: transparent;
+}
+
+.nav-checkbox:checked+.nav-button .nav-icon::before {
+  transform: rotate(135deg);
+  top: 0;
+}
+
+.nav-checkbox:checked+.nav-button .nav-icon::after {
+  transform: rotate(-135deg);
+  top: 0;
+}
+
+.nav-checkbox {
   display: none;
 }
+
+.nav-button {
+  display: block;
+  position: fixed;
+  height: 6rem;
+  width: 6rem;
+  top: 2rem;
+  right: 4.5rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 2rem #33333333;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+.nav-checkbox:checked~.nav-background {
+  transform: scale(100);
+}
+
+.nav-checkbox:checked~.nav-container {
+  color: #fff;
+  width: 100%;
+}
+
+.nav-background {
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  top: 2.5rem;
+  right: 5rem;
+  border-radius: 50%;
+  background-color: red;
+  background-image: radial-gradient(#4c319d 10%, #5f3dc4);
+  z-index: 1000;
+  transition: all 0.3s;
+}
+
+.nav-container {
+  color: transparent;
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  transition: all 0.3s;
+}
+
+.nav-list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.nav-item {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  margin: 1.5rem 0;
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  transform: scale(110%);
+  text-shadow: 0 0 1rem #00000040;
+}
+
+.nav-item:hover .nav-list {
+  list-style: circle;
+}
+
+.nav-item:active {
+  transform: scale(100%);
+  text-shadow: none;
+}
+
+
 
 /* ==================== */
 /* Hero */
@@ -195,7 +289,6 @@ header {
 .hero-img {
   width: 100%;
   border-radius: 1rem;
-  box-shadow: 0 0 5rem 1rem #00000050;
 }
 
 .hero-describtion {
@@ -254,7 +347,6 @@ header {
 .features {
   padding: 9.6rem 0;
 }
-
 
 .feature-icon {
   height: 3.2rem;

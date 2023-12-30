@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="describtion" content="A new gaming company with a big focus on cloud gaming." />
   <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="queries.css" />
   <link rel="icon" href="Images/GamingCastel_Favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
+        rel="stylesheet" />
 
   <title>Gaming Castel &mdash; A new gaming
     experience</title>
@@ -21,42 +21,27 @@
 
 <body>
   <header>
-    <nav class="navigation">
+    <nav class="nav-section">
       <a href="#">
         <img src="Images/GamingCastel_logo.png" alt="GamingCastel logo" class="nav-logo" />
       </a>
 
-      <div class="nav-bar-container long-nav">
-        <ul class="nav-bar">
-          <li>
-            <a href="#" class="nav-icon">
-              How it works
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-icon">
-              Features
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-icon">
-              Testimonials
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-icon">
-              Pricing
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="navigation">
+        <input type="checkbox" class="nav-checkbox" id="nav-toggle">
 
-      <div class="short-nav">
-        <a href="#" class="short-nav-link">
-          <ion-icon name="menu-outline" class="short-nav-icon"></ion-icon>
-        </a>
-      </div>
+        <label for="nav-toggle" class="nav-button"><span class="nav-icon"></span></label>
 
+        <div class="nav-background"></div>
+
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-item">01&nbsp;&nbsp;&nbsp;how it works</a></li>
+            <li><a href="#" class="nav-item">02&nbsp;&nbsp;&nbsp;features</a></li>
+            <li><a href="#" class="nav-item">03&nbsp;&nbsp;&nbsp;testimonials</a></li>
+            <li><a href="#" class="nav-item">04&nbsp;&nbsp;&nbsp;pricing</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <section class="hero">
@@ -234,7 +219,7 @@
             </blockquote>
             <div class="customer-profile">
               <img src="Images/Customer1.jpg" alt="profile picture of a customer"
-                class="customer-profile-picture">
+                   class="customer-profile-picture">
               <div>
                 <p class="customer-name">&mdash; Chadi Hoopan</p>
                 <p class="customer-score">
@@ -260,7 +245,7 @@
             </blockquote>
             <div class="customer-profile">
               <img src="Images/Customer2.jpg" alt="profile picture of a customer"
-                class="customer-profile-picture">
+                   class="customer-profile-picture">
               <div>
                 <p class="customer-name">&mdash; Giga Chad</p>
                 <p class="customer-score">
@@ -286,7 +271,7 @@
             </blockquote>
             <div class="customer-profile">
               <img src="Images/Customer3.jpg" alt="profile picture of a customer"
-                class="customer-profile-picture">
+                   class="customer-profile-picture">
               <div>
                 <p class="customer-name">&mdash; Tuko Salamanca</p>
                 <p class="customer-score">
@@ -322,13 +307,15 @@
 
             <ul class="pricing-list">
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span>Access to all games</span></li>
+                          class="pricing-icon"></ion-icon><span>Access to all games</span></li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> The best graphic quality</span></li>
+                          class="pricing-icon"></ion-icon><span> The best graphic quality</span>
+              </li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> Unlimited cloud space</span></li>
+                          class="pricing-icon"></ion-icon><span> Unlimited cloud space</span></li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> Chat & voice chat support</span></li>
+                          class="pricing-icon"></ion-icon><span> Chat & voice chat support</span>
+              </li>
             </ul>
 
             <div class="center">
@@ -347,13 +334,15 @@
 
             <ul class="pricing-list">
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span>Access to all games</span></li>
+                          class="pricing-icon"></ion-icon><span>Access to all games</span></li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> The best graphic quality</span></li>
+                          class="pricing-icon"></ion-icon><span> The best graphic quality</span>
+              </li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> Unlimited cloud space</span></li>
+                          class="pricing-icon"></ion-icon><span> Unlimited cloud space</span></li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> Chat & voice chat support</span></li>
+                          class="pricing-icon"></ion-icon><span> Chat & voice chat support</span>
+              </li>
             </ul>
 
             <div class="center">
@@ -372,13 +361,15 @@
 
             <ul class="pricing-list">
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span>Access to all games</span></li>
+                          class="pricing-icon"></ion-icon><span>Access to all games</span></li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> The best graphic quality</span></li>
+                          class="pricing-icon"></ion-icon><span> The best graphic quality</span>
+              </li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> Unlimited cloud space</span></li>
+                          class="pricing-icon"></ion-icon><span> Unlimited cloud space</span></li>
               <li class="pricing-list-item"><ion-icon name="checkmark-circle-outline"
-                  class="pricing-icon"></ion-icon><span> Chat & voice chat support</span></li>
+                          class="pricing-icon"></ion-icon><span> Chat & voice chat support</span>
+              </li>
             </ul>
 
             <div class="center">
@@ -459,7 +450,7 @@
   </main>
 
   <script type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>

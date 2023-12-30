@@ -50,14 +50,6 @@
         font-size: 4.8rem;
     }
 
-    .long-nav {
-        display: none;
-    }
-
-    .short-nav {
-        display: block;
-    }
-
     .grid-4-col {
         grid-template-columns: 1fr 1fr;
     }
